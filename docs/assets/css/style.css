@@ -168,7 +168,9 @@ h6 {
 }
 
 .nav-menu a,
-.nav-menu a:focus {
+.nav-menu a:focus,
+.nav-menu .lang-picker,
+.nav-menu .lang-picker:focus {
   display: flex;
   align-items: center;
   color: #45505b;
@@ -187,6 +189,12 @@ h6 {
 .nav-menu a i,
 .nav-menu a:focus i {
   font-size: 20px;
+}
+
+.nav-menu a img,
+.nav-menu a:focus img {
+  width: 20px;
+  height: 20px;
 }
 
 .nav-menu a span,
@@ -598,20 +606,12 @@ section {
   color: #47aeff;
 }
 
-.projects .iconbox-blue:hover .icon i {
-  color: #fff;
-}
-
 .projects .iconbox-blue:hover .icon path {
   fill: #47aeff;
 }
 
 .projects .iconbox-orange i {
   color: #ffa76e;
-}
-
-.projects .iconbox-orange:hover .icon i {
-  color: #fff;
 }
 
 .projects .iconbox-orange:hover .icon path {
@@ -622,20 +622,12 @@ section {
   color: #e80368;
 }
 
-.projects .iconbox-pink:hover .icon i {
-  color: #fff;
-}
-
 .projects .iconbox-pink:hover .icon path {
   fill: #e80368;
 }
 
 .projects .iconbox-yellow i {
   color: #ffbb2c;
-}
-
-.projects .iconbox-yellow:hover .icon i {
-  color: #fff;
 }
 
 .projects .iconbox-yellow:hover .icon path {
@@ -646,20 +638,12 @@ section {
   color: #ff5828;
 }
 
-.projects .iconbox-red:hover .icon i {
-  color: #fff;
-}
-
 .projects .iconbox-red:hover .icon path {
   fill: #ff5828;
 }
 
 .projects .iconbox-teal i {
   color: #11dbcf;
-}
-
-.projects .iconbox-teal:hover .icon i {
-  color: #fff;
 }
 
 .projects .iconbox-teal:hover .icon path {
@@ -670,12 +654,18 @@ section {
   color: #6CDA77;
 }
 
-.projects .iconbox-green:hover .icon i {
-  color: #fff;
-}
-
 .projects .iconbox-green:hover .icon path {
   fill: #6CDA77;
+}
+
+.projects .iconbox-blue:hover .icon i,
+.projects .iconbox-orange:hover .icon i,
+.projects .iconbox-pink:hover .icon i,
+.projects .iconbox-yellow:hover .icon i,
+.projects .iconbox-red:hover .icon i,
+.projects .iconbox-teal:hover .icon i,
+.projects .iconbox-green:hover .icon i {
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -729,6 +719,7 @@ section {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+  margin-top: 30px;
 }
 
 #footer h3 {
@@ -776,7 +767,7 @@ section {
 # Error
 --------------------------------------------------------------*/
 #error {
-  height: -moz-calc(100vh - 175px); /* Firefox */
-  height: -webkit-calc(100vh - 175px); /* Chrome, Safari */
-  height: calc(100vh - 175px); /* IE9+ and future browsers */
+  height: -moz-calc(100vh - 255px); /* Firefox */
+  height: -webkit-calc(100vh - 255px); /* Chrome, Safari */
+  height: calc(100vh - 255px); /* IE9+ and future browsers */
 }
