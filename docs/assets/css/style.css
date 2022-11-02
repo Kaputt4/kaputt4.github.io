@@ -643,19 +643,19 @@ section {
 }
 
 .projects .iconbox-teal i {
-  color: #11dbcf;
+  color: #63b7b7;
 }
 
 .projects .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
+  fill: #63b7b7;
 }
 
 .projects .iconbox-green i {
-  color: #6CDA77;
+  color: #85e085;
 }
 
 .projects .iconbox-green:hover .icon path {
-  fill: #6CDA77;
+  fill: #85e085;
 }
 
 .projects .iconbox-blue:hover .icon i,
